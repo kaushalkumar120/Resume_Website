@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resume Builder Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1 class="title">Online Resume Builder</h1>
+
+<div class="form">
+
+<input type="text" id="name" placeholder="Full Name">
+
+<input type="email" id="email" placeholder="Email">
+
+<input type="text" id="phone" placeholder="Phone">
+
+<input type="text" id="skills" placeholder="Skills (comma separated)">
+
+<input type="text" id="projects" placeholder="Projects (comma separated)">
+
+<input type="text" id="education" placeholder="Education">
+
+<input type="text" id="certifications" placeholder="Certifications">
+
+<textarea id="objective" placeholder="Career Objective"></textarea>
+
+<button onclick="generateResume()">Generate Resume</button>
+
+<button onclick="downloadPDF()">Download Resume</button>
+
+</div>
+
+<!-- RESUME TEMPLATE -->
+
+<div id="resume">
+
+<div class="header">
+
+<h2 id="rname"></h2>
+
+<p id="rcontact"></p>
+
+</div>
+
+<hr>
+
+<h3>Career Objective</h3>
+<p id="robjective"></p>
+
+<h3>Skills</h3>
+<ul id="rskills"></ul>
+
+<h3>Projects</h3>
+<ul id="rprojects"></ul>
+
+<h3>Education</h3>
+<p id="reducation"></p>
+
+<h3>Certifications</h3>
+<ul id="rcertifications"></ul>
+
+</div>
+
+<script src="script.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+
+</body>
+</html>
